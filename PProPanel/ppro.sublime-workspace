@@ -1,0 +1,505 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 10984,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "PProPanel.jsx",
+			"settings":
+			{
+				"buffer_size": 699,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "CR"
+			}
+		},
+		{
+			"contents": "Searching 17 files for \"getActiveSequ\"\n\n/Users/sean/work/projects/Premiere/git/PProPanel/ext.js:\n   30  \n   31      csInterface.evalScript('$._PPP_.getVersionInfo()', myVersionInfoFunction);  \n   32:     csInterface.evalScript('$._PPP_.getActiveSequenceName()', myCallBackFunction);  \t\n   33      csInterface.evalScript('$._PPP_.getUserName()', myUserNameFunction);  \n   34      csInterface.evalScript('$._PPP_.getSequenceProxySetting()', myGetProxyFunction);\n   ..\n   77  function mySetProxyFunction (data) {\n   78      var csInterface = new CSInterface();\n   79:     csInterface.evalScript('$._PPP_.getActiveSequenceName()', myCallBackFunction);\n   80      csInterface.evalScript('$._PPP_.getSequenceProxySetting()', myProxyFunction);\n   81  }\n\n/Users/sean/work/projects/Premiere/git/PProPanel/index.html:\n   14  \t\t\t\t\te.preventDefault(); \n   15  \t\t\t\t\tvar csInterface = new CSInterface();\n   16: \t\t\t\t\tcsInterface.evalScript('$._PPP_.getActiveSequenceName()', myCallBackFunction);  \n   17  \t\t\t\t\tcsInterface.evalScript('$._PPP_.getSequenceProxySetting()', myGetProxyFunction);\n   18  \t\t\t});\n   ..\n   62  \t\t\t\tvar csInterface = new CSInterface();\n   63  \t\t\t\tcsInterface.evalScript('$._PPP_.toggleProxyState()', mySetProxyFunction);\n   64: \t\t\t\tcsInterface.evalScript('$._PPP_.getActiveSequenceName()', myCallBackFunction);\n   65  \t\t\t\tcsInterface.evalScript('$._PPP_.getSequenceProxySetting()', myGetProxyFunction);\n   66  \t\t\t});\n\n/Users/sean/work/projects/Premiere/git/PProPanel/jsx/Premiere.jsx:\n   43          app.enableQE();\t \t\t\t\t\t\t\t\t\t\n   44  \n   45:         var activeSequence\t= qe.project.getActiveSequence(); \t// note: make sure a sequence is active in PPro UI\n   46  \n   47          if (activeSequence) {\n   ..\n   66  \t},\n   67  \n   68: \tgetActiveSequenceName : function() {\n   69        \tif (app.project.activeSequence) {\n   70  \t\t    return app.project.activeSequence.name;\n   ..\n  345  \trender : function(outputPresetPath) {\n  346  \t\tapp.enableQE();\n  347: \t\tvar activeSequence = qe.project.getActiveSequence();  // we use a QE DOM function, to determine the output extension.\n  348  \t\tif (activeSequence)\t{\n  349  \t\t\tapp.encoder.launchEncoder();\t// This can take a while; let's get the ball rolling.\n\n7 matches across 3 files\n\n\nSearching 17 files for \"save project\"\n\n/Users/sean/work/projects/Premiere/git/PProPanel/index.html:\n  197  \t\t<button class=\"controlBg textStyle\" id=\"btn_PPRO2\"\t onClick=\"evalScript('$._PPP_.createSequence()')\">Create Sequence</button>\n  198  \t\t<button class=\"controlBg textStyle\" id=\"btn_PPRO3\"  onClick=\"evalScript('$._PPP_.openProject()')\">Open different project</button>\n  199: \t\t<button class=\"controlBg textStyle\" id=\"btn_PPRO4\"   onClick=\"evalScript('$._PPP_.saveProject()')\">Save project</button>\n  200: \t\t<button class=\"controlBg textStyle\" id=\"btn_PPRO34\"\t onClick=\"evalScript('$._PPP_.saveProjectAs()')\">Save project as...</button>\n  201  \t\t<button class=\"controlBg textStyle\" id=\"btn_PPRO5\"\t onClick=\"evalScript('$._PPP_.importFiles()')\">Import Files</button>\n  202  \t\t<button class=\"controlBg textStyle\" id=\"btn_PPRO6\"  onClick=\"evalScript('$._PPP_.exportFCPXML()')\">Export FCP XML</button>\n\n2 matches in 1 file\n\n\nSearching 17 files for \"save project\"\n\n/Users/sean/work/projects/Premiere/git/PProPanel/index.html:\n  197  \t\t<button class=\"controlBg textStyle\" id=\"btn_PPRO2\"\t onClick=\"evalScript('$._PPP_.createSequence()')\">Create Sequence</button>\n  198  \t\t<button class=\"controlBg textStyle\" id=\"btn_PPRO3\"  onClick=\"evalScript('$._PPP_.openProject()')\">Open different project</button>\n  199: \t\t<button class=\"controlBg textStyle\" id=\"btn_PPRO4\"   onClick=\"evalScript('$._PPP_.saveProject()')\">Save project</button>\n  200: \t\t<button class=\"controlBg textStyle\" id=\"btn_PPRO34\"\t onClick=\"evalScript('$._PPP_.saveProjectAs()')\">Save project as...</button>\n  201  \t\t<button class=\"controlBg textStyle\" id=\"btn_PPRO5\"\t onClick=\"evalScript('$._PPP_.importFiles()')\">Import Files</button>\n  202  \t\t<button class=\"controlBg textStyle\" id=\"btn_PPRO6\"  onClick=\"evalScript('$._PPP_.exportFCPXML()')\">Export FCP XML</button>\n\n2 matches in 1 file\n\n\nSearching 17 files for \"saveProject\"\n\n/Users/sean/work/projects/Premiere/git/PProPanel/index.html:\n  197  \t\t<button class=\"controlBg textStyle\" id=\"btn_PPRO2\"\t onClick=\"evalScript('$._PPP_.createSequence()')\">Create Sequence</button>\n  198  \t\t<button class=\"controlBg textStyle\" id=\"btn_PPRO3\"  onClick=\"evalScript('$._PPP_.openProject()')\">Open different project</button>\n  199: \t\t<button class=\"controlBg textStyle\" id=\"btn_PPRO4\"   onClick=\"evalScript('$._PPP_.saveProject()')\">Save project</button>\n  200: \t\t<button class=\"controlBg textStyle\" id=\"btn_PPRO34\"\t onClick=\"evalScript('$._PPP_.saveProjectAs()')\">Save project as...</button>\n  201  \t\t<button class=\"controlBg textStyle\" id=\"btn_PPRO5\"\t onClick=\"evalScript('$._PPP_.importFiles()')\">Import Files</button>\n  202  \t\t<button class=\"controlBg textStyle\" id=\"btn_PPRO6\"  onClick=\"evalScript('$._PPP_.exportFCPXML()')\">Export FCP XML</button>\n\n/Users/sean/work/projects/Premiere/git/PProPanel/jsx/Premiere.jsx:\n   36  \t},\n   37  \n   38: \tsaveProject : function() {\n   39  \t\tapp.project.save();\n   40  \t},\n   ..\n  419  \t},\n  420  \n  421:     saveProjectAs : function() {\n  422  \t\tvar sessionCounter = 1;\n  423  \t\tvar outputPath \t= Folder.selectDialog(\"Choose the output directory\");\n\n4 matches across 2 files\n",
+			"settings":
+			{
+				"buffer_size": 5354,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"contents": "$._PPP_={\n\n\tgetVersionInfo : function() {\n\t\treturn 'PPro ' + app.version + 'x' + app.build;\n\t},\n\n\tgetUserName : function() {\n\t\tvar \thomeDir = new File('~/');\n\t\tvar \tuserName = homeDir.displayName;\n\t\thomeDir.close();\n        return userName;\n\t},\n\n\tkeepPanelLoaded : function() {\n\t\tapp.setExtensionPersistent(\"com.adobe.PProPanel\", 0);\n\t},\n\n\tupdateGrowingFile : function() {\n\t\tvar numItems\t= app.project.rootItem.children.numItems;\n\t\tvar currentItem = 0;\n\n\t\tfor (var i = 0; i < numItems; i++){\n\t\t    currentItem = app.project.rootItem.children[i];\n\t\t    if (currentItem){\n\t\t        currentItem.refreshMedia();\n\t\t    }\n\t\t}\n\t},\n\n    getSep : function() {\n\t\tif (Folder.fs == 'Macintosh') {\n\t\t    return '/';\n\t\t} else {\n\t\t\treturn '\\\\';\n\t\t}\n\t},\n\n\tsaveProject : function() {\n\t\tapp.project.save();\n\t},\n\n    exportCurrentFrameAsPNG : function() {\n        app.enableQE();\t \t\t\t\t\t\t\t\t\t\n\n\t        var activeSequence\t= qe.project.getActiveSequence(); \t// note: make sure a sequence is active in PPro UI\n\n        if (activeSequence) {\n\t        var time \t\t\t= activeSequence.CTI.timecode; \t// CTI = Current Time Indicator.\n\t        var outputPath  \t= new File(\"~/Desktop\");\n\t\t\tvar outputFileName\t= outputPath.fsName + $._PPP_.getSep() + time + '_' + activeSequence.name;\n\n            activeSequence.exportFramePNG(time, outputFileName);\n            \n\t\t} else {\n\t\t\talert(\"Active sequence required.\");\n\t\t}\n\t},\n\n    renameFootage : function() {\n\t\tvar item = app.project.rootItem.children[0]; // assumes the zero-th item in the project is footage.\n\t\tif (item) {\n\t\t\titem.name = item.name + \", updated by PProPanel.\";\n\t\t} else {\n\t\t\talert(\"No project items found.\");\n\t\t}\n\t},\n\n\tgetActiveSequenceName : function() {\n      \tif (app.project.activeSequence) {\n\t\t    return app.project.activeSequence.name;\n\t\t} else {\n\t    \treturn \"No active sequence.\";\n\t\t}\n    },\n    \n    exportSequenceAsPrProj : function() {\n\t\tvar activeSequence = app.project.activeSequence;\n\t\n\t\tif (activeSequence) {\n\t\t    \n\t\t\t// Here's how to get the start time offset to a sequence.\n\n\t\t\tvar startTimeOffset\t= activeSequence.zeroPoint;\n\t\t    var prProjExtension = '.prproj';\n\t\t\tvar outputName \t\t= activeSequence.name;\n\t\t\tvar outFolder \t\t= Folder.selectDialog();\n\t\t\n\t\t    if (outFolder) {\n                var completeOutputPath =\toutFolder.fsName + \n                                 \t     \t$._PPP_.getSep() +\n                                      \t\toutputName +\n                                      \t\tprProjExtension;\n\t\t\t\n\t\t\t\tapp.project.activeSequence.exportAsProject(completeOutputPath);\n\t\t\n\t\t\t    alert(\"Exported \" + app.project.activeSequence.name + \" to \" + completeOutputPath + \".\");\n\t\t\t} else {\n\t\t\t\talert(\"Could not find/create output folder.\");\n\t\t\t}\n\n\t\t\t// Here's how to import N sequences from a project.\n\t\t\t//\n\t\t\t// var seqIDsToBeImported = new Array;\n\t\t\t// seqIDsToBeImported[0] = ID1;\n\t\t\t// ...\n\t\t\t// seqIDsToBeImported[N] = IDN;\n\t\t\t//\n\t\t\t//app.project.importSequences(pathToPrProj, seqIDsToBeImported);\n\t\t\t\n\t\t} else {\n\t\t    alert(\"No active sequence.\");\n\t\t}\n\t},\n\n\tcreateSequenceMarkers : function() {\n\t    var activeSequence = app.project.activeSequence;\n\t    if (activeSequence) {\n\t\t    var markers\t\t= activeSequence.markers; \n\t\t    if (markers) {\n\t\t\t    var numMarkers\t= markers.numMarkers;\n                if (numMarkers > 0) {\n                    var marker_index = 1;\n                    for(var current_marker = \tmarkers.getFirstMarker(); \n                    \t\tcurrent_marker !==\tundefined; \n\t\t\t\t\t\t\tcurrent_marker =\tmarkers.getNextMarker(current_marker)){\n                        if (current_marker.name !== \"\") {\n                            alert(\t'Marker ' + marker_index + ' name = ' + current_marker.name + '.');\n                        } else {\n                            alert(\t'Marker ' + marker_index + ' has no name.');\n                        }\n                    \n                        if (current_marker.end.seconds > 0) {\n                            alert(\t'Marker ' + marker_index + ' duration = ' + (current_marker.end.seconds - current_marker.start.seconds) + ' seconds.');\n                        } else {\n                            alert(\t'Marker ' + marker_index + ' has no duration.');\n                        }\n                        alert(\t'Marker ' + marker_index + ' starts at ' + current_marker.start.seconds + ' seconds.');\n                        marker_index = marker_index + 1;\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\n\t\t\tvar newCommentMarker  \t\t= markers.createMarker(12.345);\n\t\t\tnewCommentMarker.name \t\t= 'Marker created by PProPanel.';\n\t\t\tnewCommentMarker.comments \t= 'Here are some comments, inserted by PProPanel.';\n\t\t\tnewCommentMarker.end \t\t= 15.6789;\n\n\t\t\tvar newWebMarker  \t\t\t= markers.createMarker(14.345);\n\t\t\tnewWebMarker.name \t\t\t= 'Web marker created by PProPanel.';\n\t\t\tnewWebMarker.comments\t \t= 'Here are some comments, inserted by PProPanel.';\n\t\t\tnewWebMarker.end\t\t\t= 17.6789;\n\t\t\tnewWebMarker.setTypeAsWebLink(\"http://www.adobe.com\", \"frame target\");\n\t    } else {\n\t    \talert(\"No active sequence.\");\n\t    }\n\t},\n\t\n    exportFCPXML : function() {\n        if (app.project.activeSequence) {\n            var projPath   \t\t= new File(app.project.path);\n            var parentDir  \t\t= projPath.parent;\n            var outputName    \t= app.project.activeSequence.name;\n        \tvar xmlExtension   \t= '.xml';\n            var outputPath\t\t= Folder.selectDialog(\"Choose the output directory\");\n\t\t\n\t\t\tif (outputPath) {\n\t            var completeOutputPath = outputPath.fsName + $._PPP_.getSep() + outputName + xmlExtension;\n\t        \tapp.project.activeSequence.exportAsFinalCutProXML(completeOutputPath, 1); // 1 == suppress UI\n\t            var info = \t\"Exported FCP XML for \" + \n\t            \t\t\tapp.project.activeSequence.name + \n\t            \t\t\t\" to \" + \n\t            \t\t\tcompleteOutputPath + \n\t            \t\t\t\".\";\n\t            alert(info);\n\t        } else {\n\t        \talert(\"No output path chosen.\");\n\t        }\n        } else {\n        \talert(\"No active sequence.\");\n        }\n    },\n\t\n\topenInSource : function() {\n        app.enableQE();\n\t\tvar fileToOpen = File.openDialog (\"Choose file to open.\", 0, false);\n\t\tif (fileToOpen) {\n\t\t\tqe.source.openFilePath(fileToOpen.fsName);\n\t\t\tqe.source.player.play(); \n\t\t\tfileToOpen.close(); \n\t\t}\n\t},\n\n\tsearchForBinWithName : function (nameToFind) {\n        var numItemsAtRoot\t= app.project.rootItem.children.numItems;\n        var foundBin \t\t= 0;\n          \n        for (var i = 0; (numItemsAtRoot >0) && (i < numItemsAtRoot) && (foundBin === 0); i++) {\n            var currentItem = app.project.rootItem.children[i];\n            if ((currentItem) && currentItem.name == nameToFind) {\n                foundBin = currentItem;\n            }\n        }\n        return foundBin;\n    },\n\n\timportFiles : function() {\n\t\tif (app.project) {\n\t\t\tvar nameToFind\t= 'Targeted by PProPanel import';\n\t\t\tvar targetBin\t= $._PPP_.searchForBinWithName(nameToFind);\n\n\t\t\tif (targetBin === 0) {\n\t\t\t\t// If panel can't find the target bin, it creates it.\n\t\t\t\tapp.project.rootItem.createBin(nameToFind);\n\t\t\t\ttargetBin = $._PPP_.searchForBinWithName(nameToFind);\n\t\t\t}\n\t\t\tif (targetBin){\n\t\t\t\ttargetBin.select();\n\t\t\t\tvar fileOrFilesToImport = File.openDialog (\t\"Choose files to import\", \t// title\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t0, \t\t\t\t\t\t\t// filter available files? \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\ttrue); \t\t\t\t\t\t// allow multiple?\n\t\t\t\tif (fileOrFilesToImport) {\n\t\t\t\t\t// We have an array of File objects; importFiles() takes an array of paths.\n\t\t\t\t\tvar importThese = new Array();\n\t\t\t\t\t\n\t\t\t\t\tif (importThese){\n\t\t\t\t\tfor (var i = 0; i < fileOrFilesToImport.length; i++) {\n\t\t\t\t\t\timportThese[i] = fileOrFilesToImport[i].fsName;\n\t\t\t\t\t}\n\t\t\t\t\tapp.project.importFiles(importThese, \n\t\t\t\t\t\t\t\t\t\t\t1,\t\t\t\t// suppress warnings \n\t\t\t\t\t\t\t\t\t\t\ttargetBin,\n\t\t\t\t\t\t\t\t\t\t\t0);\t\t\t\t// import as numbered stills\n\t\t\t\t}\n\t\t\t}\t\n\t\t}\t\n\t\t}\n\t},\n\n\tmuteFun : function() {\n\t\tvar atrax = app.project.activeSequence.audioTracks;\n\n\t\tfor (var i = 0; i < atrax.numTracks; i++){\n\t\t    var currentTrack = atrax[i];\n\t\t    var oldState = currentTrack.isMuted();\n\t\t    \n\t\t    currentTrack.setMute(!oldState);\n\t\t    \n\t\t    var newState = currentTrack.isMuted();\n\t\t}\n\t},\n\t\n\t\n\treplaceMedia : function() {\n\t\tvar firstProjectItem = app.project.rootItem.children[0]; \n\t\tif ((firstProjectItem) && \n\t\t\tfirstProjectItem.canChangeMediaPath()) {\n\t\t\t\n\t\t\t// \tNEW in 9.0: setScaleToFrameSize() ensures that for all clips created from this footage, \n\t\t\t//\tauto scale to frame size will be ON, regardless of the current user preference. \n\t\t\t//\tThis is\timportant for proxy workflows, to avoid mis-scaling upon replacement. \n\n\t\t\tfirstProjectItem.setScaleToFrameSize();\n\t\t\t\n\t\t\tvar replacementMedia = File.openDialog(\t\"Choose new media file, for \" + \n\t\t\t\t\t\t\t\t\t\t\t\t\tfirstProjectItem.name, \n\t\t\t\t\t\t\t\t\t\t\t\t\t0, \t\t\t\t\t\t// file filter\n\t\t\t\t\t\t\t\t\t\t\t\t\tfalse); \t\t\t\t// allow multiple?\n\t\t\t\n\t\t\tif (replacementMedia) {\n\t\t\t\tfirstProjectItem.name = replacementMedia.name + \", formerly known as \" + firstProjectItem.name;\n\t\t\t\tfirstProjectItem.changeMediaPath(replacementMedia.fsName);\n\t\t\t\treplacementMedia.close(); \n\t\t\t}\n\t\t} else {\n\t\t\talert(\"Couldn't change path of \" + firstProjectItem.name + \".\");\n\t\t}\n\t},\n\t\n\topenProject : function() {\n\t\tvar filterString = \"\";\n\t\tif (Folder.fs == 'Windows'){\n\t\t\tfilterString = \"All files:*.*\";\n\t\t}\n\t\tvar projToOpen = File.openDialog (\"Choose project:\", filterString, false);\n\t\tif ((projToOpen) && projToOpen.exists) {\n\t\t\tapp.openDocument(\tprojToOpen.fsName,\n\t\t\t\t\t\t\t\t1,\t\t\t\t\t// suppress 'Convert Project' dialogs?\n\t\t\t\t\t\t\t\t1,\t\t\t\t\t// suppress 'Locate Files' dialogs?\n\t\t\t\t\t\t\t\t1);\t\t\t\t\t// suppress warning dialogs?\n\t\t\tprojToOpen.close();\n\t\t}\t\n\t},\n\n\texportFramesForMarkers : function (){\n\t\tapp.enableQE();\n\t    var activeSequence = app.project.activeSequence;\n\t    if (activeSequence) {\n\t\t    var markers\t\t= activeSequence.markers; \n\t\t    var markerCount\t= markers.numMarkers;\n\t\t    if (markerCount > 0){\n\t\t    \tvar firstMarker = markers.getFirstMarker();\n                \n                activeSequence.setPlayerPosition(firstMarker.start.ticks);\n\n                $._PPP_.exportCurrentFrameAsPNG();\n\n                var previousMarker = 0;\n\n\t\t    \tif (firstMarker){\n\t\t\t    \tfor(var i = 0; i < markerCount; i++){\n                         if (i === 0){\n                            currentMarker = markers.getNextMarker(firstMarker);\n                         } else {\n                            currentMarker = markers.getNextMarker(previousMarker);\n                         }\n\t\t\t    \t\tif (currentMarker){\n                            activeSequence.setPlayerPosition(currentMarker.start.ticks);\n                            previousMarker = currentMarker;\n                            $._PPP_.exportCurrentFrameAsPNG();\n\t\t\t    \t\t}\n\t\t\t    \t}\n\t\t    \t}\n\t\t    } else {\n\t\t    \talert(\"No markers applied to \" + activeSequence.name + \".\");\n\t\t    }\n        } else {\n        \talert(\"No active sequence.\");\n        }\n    },\n\n\tcreateSequence : function(name) {\n\t\tvar someID = \"xyz123\";\n\t\tvar seqName = prompt('Name of sequence?',  '<<<default>>>', 'Sequence Naming Prompt');\n\t\tapp.project.createNewSequence(seqName, someID);\n\t},\n\n\tcreateSequenceFromPreset : function(presetPath) {\n\t\tapp.enableQE();\n\t\tvar seqName = prompt('Name of sequence?',  '<<<default>>>', 'Sequence Naming Prompt');\n\t\tif (seqName) {\n\t\t\tqe.project.newSequence(seqName, presetPath);\n\t\t}\n\t},\n\n\trender : function(outputPresetPath) {\n\t\tapp.enableQE();\n\t\tvar activeSequence = qe.project.getActiveSequence();  // we use a QE DOM function, to determine the output extension.\n\t\tif (activeSequence)\t{\n\t\t\tapp.encoder.launchEncoder();\t// This can take a while; let's get the ball rolling.\n\n\t\t\t/*var timeSecs\t= activeSequence.CTI.secs;\t\t// Just for reference, here's how to access the CTI \n\t\t\tvar timeFrames\t= activeSequence.CTI.frames;\t// position, for the active sequence. \n\t\t\tvar timeTicks\t= activeSequence.CTI.ticks;\n\t\t\tvar timeString\t= activeSequence.CTI.timecode;\n\n\t\t\tvar seqInPoint\t= app.project.activeSequence.getInPoint();\t// new in 9.0\n\t\t\tvar seqOutPoint\t= app.project.activeSequence.getOutPoint();\t// new in 9.0*/\n\n\t\t\tvar projPath   \t= new File(app.project.path);\n\t\t\tvar outputPath  = Folder.selectDialog(\"Choose the output directory\");\n\n\t\t\tif ((outputPath) && projPath.exists){\n\t\t\t\tvar outPreset  \t\t= new File(outputPresetPath);\n\t\t\t\tif (outPreset.exists === true){\n\t\t\t\t\tvar outputFormatExtension   \t= \tactiveSequence.getExportFileExtension(outPreset.fsName);\n\t\t\t\t\tif (outputFormatExtension){\n\n\t\t\t\t\t\t var outputFilename = activeSequence.name + '.' + outputFormatExtension;\n\n\t\t\t\t\t\tvar fullPathToFile \t= \toutputPath.fsName + \n\t\t\t\t\t\t\t\t\t\t\t\t$._PPP_.getSep() + \n\t\t\t\t\t\t\t\t\t\t\t\tactiveSequence.name + \n\t\t\t\t\t\t\t\t\t\t\t\t\".\" + \n\t\t\t\t\t\t\t\t\t\t\t\toutputFormatExtension;\t\t\t\n\n\t\t\t\t\t\tvar outFileTest = new File(fullPathToFile);\n\t\t\t\n\t\t\t\t\t\tif (outFileTest.exists){\n\t\t\t\t\t\t\tvar destroyExisting = confirm(\"A file with that name already exists; overwrite?\", false, \"Are you sure...?\");\n\t\t\t\t\t\t\tif (destroyExisting){\n\t\t\t\t\t\t\t\toutFileTest.remove();\n\t\t\t\t\t\t\t\toutFileTest.close();\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\t\n\t\t\t\n\t\t\t\t\t\tapp.encoder.bind('onEncoderJobComplete',\t$._PPP_.onEncoderJobComplete);\n\t\t\t\t\t\tapp.encoder.bind('onEncoderJobError', \t\t$._PPP_.onEncoderJobError);\n\t\t\t\t\t\tapp.encoder.bind('onEncoderJobProgress', \t$._PPP_.onEncoderJobProgress);\n\t\t\t\t\t\tapp.encoder.bind('onEncoderJobQueued', \t\t$._PPP_.onEncoderJobQueued);\n\n\t\t\t\t\t\t// use these 0 or 1 settings to disable some/all metadata creation.\n\t\t\t\n\t\t\t\t\t\tapp.encoder.setSidecarXMPEnabled(0);\n\t\t\t\t\t\tapp.encoder.setEmbeddedXMPEnabled(0);\n\t\t\t\n\t\t\t            // For reference, here's how to export from within PPro (blocking further user interaction).\n\t\t\t            \n\t\t\t            // activeSequence.exportAsMediaDirect(fullPathToFile,  outPreset.fsName, app.encoder.ENCODE_WORKAREA);\n\t\t\t\n\t\t\t\t\t\tvar jobID = app.encoder.encodeSequence(\tapp.project.activeSequence,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tfullPathToFile,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\toutPreset.fsName,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tapp.encoder.ENCODE_WORKAREA, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1);    // Remove from queue upon successful completion?                 \n\t\t\t\t\t\t$._PPP_.message('jobID = ' + jobID);\n\n\t\t\t\t\t\toutPreset.close();\n\t\t\t\t\t}\n\t\t\t\t} else {\n\t\t\t\t\talert(\"Could not find output preset.\");\n\t\t\t\t}\n\t\t\t} else {\n\t\t\t\talert(\"Could not find/create output path.\");\n\t\t\t}\n\t\t\tprojPath.close();\n\t\t} else {\n\t\t\talert(\"No active sequence.\");\n\t\t}\n\t},\n\n    saveProjectAs : function() {\n\t\tvar sessionCounter = 1;\n\t\tvar outputPath \t= Folder.selectDialog(\"Choose the output directory\");\n\t\tif (outputPath) {\n\t\t\tvar absPath \t= outputPath.fsName;\n\t\t    var outputName \t= String(app.project.name);\n\t\t    var array \t\t= outputName.split('.', 2);\n\n\t\t    outputName = array[0]+ sessionCounter + '.' + array[1]; \n\t\t    sessionCounter++;\n\t\t\t\n\t\t    var fullOutPath = absPath + $._PPP_.getSep() + outputName;\n\t\t    app.project.saveAs(fullOutPath);\n\t\t    app.openDocument(\tfullOutPath,\n \t\t\t\t\t\t\t\t1,\t\t\t\t\t// suppress 'Convert Project?' dialogs\n \t\t\t\t\t\t\t\t1,\t\t\t\t\t// suppress 'Locate Files' dialogs\n\t\t\t\t\t\t\t\t1);\t\t\t\t\t// suppress warning dialogs\n\t\t}\n\t},\n\t\t\n\tmungeXMP : function(){\n\t\tvar projectItem = app.project.rootItem.children[0]; // assumes first item is footage.\n\t\tif (projectItem) {\n\t\t\tif (ExternalObject.AdobeXMPScript === undefined) {\n\t\t\t\tExternalObject.AdobeXMPScript = new ExternalObject('lib:AdobeXMPScript'); \n\t\t\t}\n\t\n\t\t\tif(ExternalObject.AdobeXMPScript !== undefined) { \t// safety-conscious!\n\t\t\t\tvar xmp_blob = projectItem.getXMPMetadata();\n\t\t\t\tvar xmp = new XMPMeta(xmp_blob);\n\t\t\t\tvar have_a_scene = xmp.doesPropertyExist(XMPConst.NS_DM, \"scene\");\n\t\t\t\tvar oldVal = \"\";\n\t\t\t\t\n\t\t\t\tif (have_a_scene === true){\n\t\t\t\t\tvar myScene = xmp.getProperty(XMPConst.NS_DM, \"scene\");\n\t\t\t\t\toldVal \t\t= myScene.value;\n\t\t\t\t}\n\t\t\t\n\t\t\t\t// Regardless of whether there WAS scene data, set scene data. \n\t\t\t\t\n\t\t\t\txmp.setProperty(XMPConst.NS_DM, \"scene\", oldVal + \" Added by PProPanel sample!\");\n\t\t\t\t\n\t\t\t\t// Now, let's mess with the description! Multi-line field == slightly more complicated. \n\t\t\t\t\n    \t\t\tvar descriptionProp \t\t\t= \"description\";\n    \t\t\tvar have_a_description \t\t\t= xmp.doesPropertyExist(XMPConst.NS_DC, descriptionProp);\n\t\t\t\tvar firstDescription \t\t\t= \"PProPanel wrote the first value into description.\";\n\t\t\t\tvar numDescriptionValuesPresent = xmp.countArrayItems(XMPConst.NS_DC, descriptionProp);\n\t\t\t\n    \t\t\tif( numDescriptionValuesPresent === 0) {\n    \t\t\t\txmp.appendArrayItem(XMPConst.NS_DC, \n    \t\t\t\t\t\t\t\t\tdescriptionProp, \n    \t\t\t\t\t\t\t\t\tnull, \n    \t\t\t\t\t\t\t\t\tXMPConst.PROP_IS_ARRAY, \n    \t\t\t\t\t\t\t\t\tXMPConst.ARRAY_IS_ORDERED);\n\n    \t\t\t\txmp.insertArrayItem(XMPConst.NS_DC, \n    \t\t\t\t\t\t\t\t\tdescriptionProp, \n    \t\t\t\t\t\t\t\t\t1, \n    \t\t\t\t\t\t\t\t\tfirstDescription);\n    \t\t\t} else {\n    \t\t\t\tvar appendedText \t= '...this text added by PProPanel.';\n\n    \t\t\t\toldDescriptionValue = xmp.getArrayItem(XMPConst.NS_DC, descriptionProp, 1);\n\n    \t\t\t\txmp.setArrayItem(\tXMPConst.NS_DC, \n    \t\t\t\t\t\t\t\t\tdescriptionProp, \n    \t\t\t\t\t\t\t\t\t1, \n    \t\t\t\t\t\t\t\t\t(oldDescriptionValue.value + appendedText));\n    \t\t\t}\n\n\t\t\t\tvar xmpAsString = xmp.serialize();\t\t// either way, serialize and write XMP.\n\t\t\t\tprojectItem.setXMPMetadata(xmpAsString);\n\t\t\t}\n\t\t} else {\n\t\t\talert(\"Project item required.\");\n\t\t}\n\t},\n\t\n\tgetProductionByName : function(nameToGet) {\n\t\tfor (var i = 0; i < productionList.numProductions; i++) {\n\t\t\tthis_prod = productionList[i];\n\n\t\t\tif (this_prod.name == nameToGet) {\n\t\t\t\treturn this_prod;\n\t\t\t}\n\t\t}\n\t\treturn undefined;\n\t},\n\n\tpokeAnywhere : function() {\n\t\tvar token \t\t\t\t= app.anywhere.getAuthenticationToken();\n\t\tvar productionList \t\t= app.anywhere.listProductions();\n\t\tvar isProductionOpen\t= app.anywhere.isProductionOpen();\n\t\tif (isProductionOpen === true) {\n\t\t\tvar sessionURL\t\t\t= app.anywhere.getCurrentEditingSessionURL();\n\t\t\tvar selectionURL\t\t= app.anywhere.getCurrentEditingSessionSelectionURL();\n\t\t\tvar activeSequenceURL\t= app.anywhere.getCurrentEditingSessionActiveSequenceURL();\n\t\t\t\n\t\t\tvar theOneIAskedFor = $._PPP_.getProductionByName(\"test\");\n\t\t\n\t\t\tif (theOneIAskedFor) {\n\t\t\t\tvar out = theOneIAskedFor.name + \", \" + theOneIAskedFor.description;\n\n\t\t\t\talert(\"Found: \" + out);\t// todo: put useful code here.\n\t\t\t}\n\t\t} else {\n\t\t\talert(\"No Production open.\");\n\t\t}\n\t},\n\n\tdumpOMF : function() {\n\t\tvar activeSequence = app.project.activeSequence;\n\t\tif (activeSequence) {\n\t\t\tvar outputPath = Folder.selectDialog(\"Choose the output directory\");\n\t\t\tif (outputPath){\n\t\t\t\tvar absPath = outputPath.fsName;\n\t\t\t    var outputName  = String(activeSequence.name) + '.omf';\n\n                var fullOutPathWithName = absPath + $._PPP_.getSep() + outputName;\n\n\t\t\t\tapp.project.exportOMF(\tapp.project.activeSequence,\t\t// sequence\n\t\t\t\t\t\t\t\t\t\tfullOutPathWithName, \t\t// output file path\n\t\t\t\t\t\t\t\t\t\t'OMFTitle',\t\t\t\t\t\t// OMF title\n\t\t\t\t\t\t\t\t\t\t48000,\t\t\t\t\t\t\t// sample rate (48000 or 96000)\n\t\t\t\t\t\t\t\t\t\t16,\t\t\t\t\t\t\t\t// bits per sample (16 or 24)\n\t\t\t\t\t\t\t\t\t\t1,\t\t\t\t\t\t\t\t// audio encapsulated flag (1 : yes or 0 : no)\n\t\t\t\t\t\t\t\t\t\t0,\t\t\t\t\t\t\t\t// audio file format (0 : AIFF or 1 : WAV)\n\t\t\t\t\t\t\t\t\t\t0,\t\t\t\t\t\t\t\t// trim audio files (0 : no or 1 : yes)\n\t\t\t\t\t\t\t\t\t\t0,\t\t\t\t\t\t\t\t// handle frames (if trim is 1, handle frames from 0 to 1000)\n\t\t\t\t\t\t\t\t\t\t0);\t\t\t\t\t\t\t\t// include pan flag (0 : no or 1 : yes)\n\t\t\t}\n\t\t} else {\n\t\t\talert(\"No active sequence.\");\n\t\t}\n\t},\n\t\n\taddClipMarkers : function () {\n\t\tvar projectItem = app.project.rootItem.children[0]; // assumes first item is footage.\n\t\tif (projectItem) {\n            if (projectItem.type == ProjectItemType.CLIP ||\n                projectItem.type == ProjectItemType.FILE) {\n                \n\t\t\t\tmarkers = projectItem.getMarkers();\n\n\t\t\t\tif (markers) {\n\t\t\t\t\tvar num_markers \t= markers.numMarkers;\n\n\t\t\t\t\tvar new_marker  \t= markers.createMarker(12.345);\n\t\t\t\t\tnew_marker.name \t= 'Marker created by PProPanel.';\n\t\t\t\t\tnew_marker.comments = 'Here are some comments, inserted by PProPanel.';\n\t\t\t\t\tnew_marker.end \t\t= 15.6789;\n\n\t\t\t\t\t//default marker type == comment. To change marker type, call one of these:\n\n\t\t\t\t\t// new_marker.setTypeAsChapter();\n\t\t\t\t\t// new_marker.setTypeAsWebLink();\n\t\t\t\t\t// new_marker.setTypeAsSegmentation();\n\t\t\t\t\t// new_marker.setTypeAsComment();\n\t\t\t\t}\n\t\t\t} else {\n           \t\talert(\"Can only add markers to footage items.\");\n\t\t\t}\n\t\t}    \n\t},\n\n\tmodifyProjectMetadata : function () {\n\t\tvar kPProPrivateProjectMetadataURI = \"http://ns.adobe.com/premierePrivateProjectMetaData/1.0/\";\n\t\tvar namefield = \"Column.Intrinsic.Name\";\n\t\tvar tapename  = \"Column.Intrinsic.TapeName\";\n\t\tvar desc      = \"Column.PropertyText.Description\";\n\t\tvar newField  = \"ExampleFieldName\";\n\n\t\tif (app.isDocumentOpen()) {\n\t\t\tvar projectItem = app.project.rootItem.children[0]; // just grabs first projectItem.\n\t\t\tif (projectItem) {\n\t\t\t\tif (ExternalObject.AdobeXMPScript === undefined) {\n\t\t\t\t\tExternalObject.AdobeXMPScript = new ExternalObject('lib:AdobeXMPScript');\n\t\t\t\t}\n\n\t\t\t\tif (ExternalObject.AdobeXMPScript !== undefined) {\t// safety-conscious!\n\t\t\t\t\tvar projectMetadata = projectItem.getProjectMetadata();\n\t\t\t\t\tvar successfullyAdded = app.project.addPropertyToProjectMetadataSchema(newField, \"ExampleFieldLabel\",  2);\n\n\t\t\t\t\tvar xmp = new XMPMeta(projectMetadata);\n\t\t\t\t\tvar obj = xmp.dumpObject();\n\n\t\t\t\t\t// var aliases = xmp.dumpAliases();\n\n\t\t\t\t\tvar namespaces = XMPMeta.dumpNamespaces();\n\n\n\n\t\t\t\t\tvar found_name      = xmp.doesPropertyExist(kPProPrivateProjectMetadataURI, namefield);\n\t\t\t\t\tvar found_tapename  = xmp.doesPropertyExist(kPProPrivateProjectMetadataURI, tapename);\n\t\t\t\t\tvar found_desc      = xmp.doesPropertyExist(kPProPrivateProjectMetadataURI, desc);\n\t\t\t\t\tvar found_custom = xmp.doesPropertyExist(kPProPrivateProjectMetadataURI, newField);\n\n\t\t\t\t\txmp.setProperty(kPProPrivateProjectMetadataURI, tapename, \t\"***TAPENAME***\");\n\t\t\t\t\txmp.setProperty(kPProPrivateProjectMetadataURI, desc, \t\t\"***DESCRIPTION***\");\n\t\t\t\t\txmp.setProperty(kPProPrivateProjectMetadataURI, namefield, \t\"***NEWNAME***\");\n\t\t\t\t\txmp.setProperty(kPProPrivateProjectMetadataURI, newField, \"PProPanel set this, using addPropertyToProjectMetadataSchema().\");\n\n\t\t\t\t\tvar str = xmp.serialize();\n\n\t\t\t\t\tvar array = new Array();\n\t\t\t\t\tarray[0] = tapename;\n\t\t\t\t\tarray[1] = desc;\n\t\t\t\t\tarray[2] = namefield;\n\t\t\t\t\tarray[3] = newField;\n\n\t\t\t\t\tprojectItem.setProjectMetadata(str, array);\n\t\t\t\t\t\t\t   \n\t\t\t\t\t// test: is it in there?\n\t\t\t\t\t\n\t\t\t\t\tvar newblob\t\t= projectItem.getProjectMetadata();\n\t\t\t\t\tvar newXMP\t\t= new XMPMeta(newblob);\n\t\t\t\t\tvar foundYet\t= newXMP.doesPropertyExist(kPProPrivateProjectMetadataURI, newField);\n\n\t\t\t\t\tif (foundYet){\n\t\t\t\t\t\talert(\"PProPanel successfully added a field to the project metadata schema, and set a value for it.\");\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t\t}\n\t},\n\n\tupdatePAR : function() {\n\t\tvar item = app.project.rootItem.children[0]; \n\t\tif(\t(item) && \n\t\t\t((item.type == ProjectItemType.FILE) || (item.type == ProjectItemType.CLIP))){\n\t\t\t\t// If there is an item, and it's either a clip or file...\n\t\t\t\titem.setOverridePixelAspectRatio(185,  100); // anamorphic is BACK!   ;)\n\t\t\t} else {\n\t\t\t\talert('You cannot override the PAR of bins or sequences.');\n\t\t\t}\n\t},\n\t\n\tgetnumAEProjectItems : function() {\n\t\tvar bt \t  = new BridgeTalk();\n\t\tbt.target = 'aftereffects';\n\t\tbt.body   = 'alert(\"Items in AE project: \" + app.project.rootFolder.numItems);app.quit();';\n\t\tbt.send();\n\t},\n\n\tupdateEventPanel : function() {\n\t\tapp.setSDKEventMessage('Here is some information.', 'info');\n\t\tapp.setSDKEventMessage('Here is a warning.', 'warning');\n\t\t//app.setSDKEventMessage('Here is an error.', 'error');  // Very annoying; use sparingly.\n\t},\n\n\twalkAllBinsForFootage : function(parentItem, outPath){\n\t\tfor (var j = 0; j < parentItem.children.numItems; j++){\n\t\t\tvar currentChild = parentItem.children[j];\n\t\t\tif (currentChild){\n\t\t\t\tif (currentChild.type == ProjectItemType.BIN){\n\t\t\t\t\t$._PPP_.walkAllBinsForFootage(currentChild, outPath);\t\t// warning; recursion!\n\t\t\t\t} else {\n\t\t\t\t\t$._PPP_.dumpProjectItemXMP(currentChild, outPath);\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t},\n\n\tsearchBinForProjItemByName : function(i, currentItem, nameToFind){\n\n\t\tfor (var j = 0; j < currentItem.children.numItems; j++){\n\t\t\tvar currentChild = currentItem.children[j];\n\t\t\tif (currentChild){\n\t\t\t\tif (currentChild.type == ProjectItemType.BIN){\n\t\t\t\t\treturn $._PPP_.searchBinForProjItemByName(j, currentChild, nameToFind);\t\t// warning; recursion!\n\t\t\t\t} else {\n                     if (currentChild.name == nameToFind){\n                        return currentChild;\n                     } else {\n                         currentChild = currentItem.children[j+1];\n                         if (currentChild){\n                             return $._PPP_.searchBinForProjItemByName(0, currentChild, nameToFind);\n                         }\n                     }\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t},\n\n\tdumpXMPFromSequences : function (){\n\n\t\tvar outPath = Folder.selectDialog(\"Choose the output directory\");\n\n\t\tvar projForSeq = 0;\n\t\tvar seqCount = app.project.sequences.numSequences;\n\n\t\tfor (var i = 0; i < seqCount; i++){\n\t\t    var currentSeq = app.project.sequences[i];\n\t\t    \n\t\t    if (currentSeq){\n\t        \tprojForSeq = $._PPP_.searchBinForProjItemByName(0, app.project.rootItem, currentSeq.name);\n\t        \tif (projForSeq){\n\t        \t\t$._PPP_.dumpProjectItemXMP(projForSeq, outPath.fsName);\n\t        \t} else {\n\t        \t\talert(\"Couldn't find projectItem for sequence \" + currentSeq.name);\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t},\n\n    dumpProjectItemXMP : function (projectItem, outPath) {\n\n\t\tvar xmpBlob\t\t\t\t= projectItem.getXMPMetadata();\n\t\tvar outFileName \t\t= projectItem.name + '.xmp';\n        var completeOutputPath \t= outPath + $._PPP_.getSep() + outFileName;\n\t\tvar outFile \t\t\t= new File(completeOutputPath);\n\n\t\tif (outFile){\n\t\t\toutFile.encoding = \"UTF8\";\n\t\t\toutFile.open(\"w\", \"TEXT\", \"????\");\n\t\t\toutFile.write(xmpBlob.toString());\n\t\t\toutFile.close();\n\t\t}\n\t},\n\n\taddSubClip : function() {\n\n\t\tvar startTimeSeconds \t= 1.23743;\n\t\tvar endTimeSeconds \t\t= 3.5235;\n\t\tvar hasHardBoundaries \t= 0;\n\t\t\n\t\tvar sessionCounter \t\t= 1;\n\t\tvar takeVideo \t\t\t= 1;  // optional, defaulting to 1\n\t\tvar takeAudio \t\t\t= 1; //  optional, defaulting to 1\n\n\t\tvar projectItem = app.project.rootItem.children[0]; // just grabs the first item\n\n\t\tif ( (projectItem) && \n\t\t\t((projectItem.type == ProjectItemType.CLIP)  || (projectItem.type == ProjectItemType.FILE)) ){\n\t\t\tvar newSubClipName = prompt('Name of subclip?',  projectItem.name + '_' + sessionCounter, 'Name your subclip');\n\t\t\t\n\t\t\tvar newSubClip \t= projectItem.createSubClip(newSubClipName, \n\t\t\t\t\t\t\t\t\t\t\t\t\t   \tstartTimeSeconds, \n\t\t\t\t\t\t\t\t   \t\t\t\t\t\tendTimeSeconds, \n\t\t\t\t\t\t\t\t\t\t\t\t\t  \thasHardBoundaries,\n\t\t\t\t\t\t\t\t   \t\t\t\t\t\ttakeVideo,\n\t\t\t\t\t\t\t     \t   \t\t\t\t\ttakeAudio);\n\t\t} else {\n\t\t\talert(\"Could not sub-clip \" + projectItem.name + \".\");\n\t\t}\n\t},\n\n\tdumpXMPFromAllProjectItems : function() {\n\n        var outPath = Folder.selectDialog(\"Choose the output directory\");\n\t\t         \n\t\tif (outPath) {\n\t\t\tvar\tnumItemsInRoot = app.project.rootItem.children.numItems;\n\n\t\t\tfor (var i = 0; i < numItemsInRoot; i++){\n\t\t\t\tvar currentItem = app.project.rootItem.children[i];\n\t\t\t\tif (currentItem){\n\t\t\t        if (currentItem.type == ProjectItemType.BIN){\n\t\t\t\t        $._PPP_.walkAllBinsForFootage(currentItem, outPath.fsName);\n\t\t\t\t\t} else {\n\t\t\t\t\t    $._PPP_.dumpProjectItemXMP(currentItem, outPath.fsName);\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t},\n\n\texportAAF : function() {\n\n\t\tvar sessionCounter = 1;\n\t\t\n\t\tif (app.project.activeSequence){\n\n\t\t\tvar outputPath \t= Folder.selectDialog(\"Choose the output directory\");\n        \n\t\t\tif (outputPath) {\n\t\t\t\n\t\t\t\tvar absPath \t= outputPath.fsName;\n\t\t\t    var outputName \t= String(app.project.name);\n\t\t\t    var array \t\t= outputName.split('.', 2);\n\n\t\t\t    outputName = array[0]+ sessionCounter + '.' + array[1]; \n\t\t\t    sessionCounter++;\n\t\t\t\t\n\t\t\t    var fullOutPath = absPath + $._PPP_.getSep() + outputName + '.aaf';\n\n\t\t\t    var optionalPathToOutputPreset = null;\n\n\t\t\t\tapp.project.exportAAF(  app.project.activeSequence,       \t// which sequence\n\t\t\t\t\t\t\t\t\t\tfullOutPath,\t\t\t\t\t\t// output path\n\t\t\t\t\t\t\t\t\t\t1,                                 \t// mix down video?\n\t\t\t\t\t\t\t\t\t\t0,                                 \t// explode to mono?\n\t\t\t\t\t\t\t            96000,                             \t// sample rate\n\t\t\t\t\t\t\t\t\t\t16,                                \t// bits per sample\n\t\t\t\t\t\t\t\t\t\t0,                                 \t// embed audio? \n\t\t\t\t\t\t\t\t\t\t0,                                 \t// audio file format? 0 = aiff, 1 = wav\n\t\t\t\t\t\t\t\t\t\t0,                                 \t// trim sources? \n\t\t\t\t                        0/*,\t\t\t\t\t\t\t\t\t// number of 'handle' frames\n\t\t\t\t                        optionalPathToOutputPreset*/);\t\t// optional; .epr file to use\n\t\t\t} else {\n\t\t\t\talert(\"Couldn't create AAF output.\");\n\t        }\n        } else {\n        \talert(\"No active sequence.\");\n        }\n\t},\n\n\tsetScratchDisk : function (){\n\t\t\n        var scratchPath = Folder.selectDialog(\"Choose new scratch disk directory\");\n\t\t         \n\t\tif ((scratchPath) && scratchPath.exists) {\n\t\t\tapp.setScratchDiskPath(scratchPath.fsName, ScratchDiskType.FirstAutoSaveFolder); // see ScratchDiskType object, in ESTK.\n        }\n\t},\n\n\tgetSequenceProxySetting : function() {\n\n\t\tvar returnVal = 'false';\n\n\t\tvar seq = app.project.activeSequence;\n\n\t\tif (seq) {\n\t\t\tif (seq.getEnableProxies() > 0) {\n\t\t\t\treturnVal = 'true';\n\t\t\t}\n\t\t}\n\t\treturn returnVal;\n\t},\n\n\ttoggleProxyState : function() {\n\n\t\tvar seq = app.project.activeSequence;\n\t\tif (seq) {\n\t\t\tvar update = \"Proxies for \" + seq.name + \" turned \";\n\t\n\t\t\tif (seq.getEnableProxies() > 0) {\n\t\t\t\tseq.setEnableProxies(false);\n\t\t\t\tupdate = update + \"OFF.\";\n\t\t\t\tapp.setSDKEventMessage(update, 'info');\n\t\t\t} else {\n\t\t\t\tseq.setEnableProxies(true);\n\t\t\t\tupdate = update + \"ON.\";\n\t\t\t\tapp.setSDKEventMessage(update, 'info');\n\t\t\t}\n\t\t}\n\t},\n\n\tsetProxiesON : function () {\n\t\tvar firstProjectItem = app.project.rootItem.children[0]; \n\n\t\tif (firstProjectItem !== null) {\n\t\t\tif (firstProjectItem.canProxy()){\n\t\t\t\tvar shouldAttachProxy = true;\n\t\t\t\tif (firstProjectItem.hasProxy()) {\n\t\t\t\t\tshouldAttachProxy = confirm(firstProjectItem.name + \" already has an assigned proxy. Re-assign anyway?\", false, \"Are you sure...?\");\n\t\t\t\t}\n\t            if (shouldAttachProxy) {\n\t\t            var proxyPath = File.openDialog(\"Choose proxy for \" + firstProjectItem.name + \":\" );\n\t\t            if (proxyPath.exists){\n                        firstProjectItem.attachProxy(proxyPath.fsName, 0);\n                    } else {\n                        alert(\"Could not attach proxy from \" + proxyPath + \".\");\n                    }\n\t\t\t    }\n\t        } else {\n\t        \talert(\"Cannot attach a proxy to \" + firstProjectItem.name + \".\");\n\t        }\n\t\t} else {\n\t\t\talert(\"No project item available.\");\n\t\t}\n\t},\n\n\tclearCache : function () {\n\n\t\tapp.enableQE();\n\n\t\tMediaType \t= {};\n\t\t\n\t\t// Magical constants from our internal automation.\n\n\t\tMediaType.VIDEO = \"228CDA18-3625-4d2d-951E-348879E4ED93\";\n\t\tMediaType.AUDIO = \"80B8E3D5-6DCA-4195-AEFB-CB5F407AB009\";\n\t\tMediaType.ANY   = \"FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF\";\n\t\tqe.project.deletePreviewFiles(MediaType.ANY);\n\t},\n\t\n\trandomizeSequenceSelection : function (){\n\t\tvar sequence = app.project.activeSequence;\n\t\tvar trackGroups = [ sequence.audioTracks, sequence.videoTracks ];\n\t\tvar trackGroupNames = [ \"audioTracks\", \"videoTracks\" ];\n\n\t    var updateUI = true;\n\t\t\n\t\tfor(var gi = 0; gi<2; gi++)\n\t\t{\n\t\t    $._PPP_.message(trackGroupNames[gi]);\n\t\t    group = trackGroups[gi];\n\t\t    for(var ti=0; ti<group.numTracks; ti++)\n\t\t    {\n\t\t        var track = group[ti];\n\t\t        var clips = track.clips;\n\t\t       var transitions = track.transitions;\n\t\t\n\t\t        $._PPP_.message(\"track : \" + ti + \"    clip count: \" + clips.numTracks + \"      transition count: \" + transitions.numTracks);  \n\t\t\n\t\t        for(var ci=0; ci<clips.numTracks; ci++)\n\t\t        {\n\t\t            var clip = clips[ci];\n\t\t            name = (clip.projectItem == undefined ? \"<null>\" : clip.projectItem.name);\n\t\t            var  before = clip.isSelected();\n\t\t\n\t\t            // randomly select clips\n\t\t            clip.setSelected((Math.random() > 0.5), updateUI);\n\t\t\n\t\t            var beforeSelected = before ? \"Y\" : \"N\";            \n\t\t            var afterSelected = clip.selected ? \"Y\" : \"N\";\n\t\t            $._PPP_.message(\"clip : \" + ci + \"     \" + name + \"       \" + beforeSelected + \" -> \" + afterSelected);        \n\t\t        }\n\t\t\n\t\t        for(var tni=0; tni<transitions.numTracks; ++tni)\n\t\t        {\n\t\t            var transition = transitions[tni];\n\t\t            var before = transition.isSelected();\n\t\t\n\t\t            // randomly select transitions\n\t\t            transition.setSelected((Math.random() > 0.5), updateUI);\n\t\t\n\t\t            var beforeSelected = before ? \"Y\" : \"N\";            \n\t\t            var afterSelected = transition.selected ? \"Y\" : \"N\";\n\t\t\n\t\t            $._PPP_.message('transition: ' + tni+ \"       \" + beforeSelected + \" -> \" + afterSelected);\n\t\t        }\n\t\t    }\n\t\t}\n\t},\n\n\t// Define a couple of callback functions, for AME to use during render.\n\t\n\tmessage : function (msg) {\n\t\t //$.writeln(msg);\t // Using '$' object will invoke ExtendScript Toolkit, if installed.\n\t},\n\t\n\tonEncoderJobComplete : function (jobID, outputFilePath) {\n\t\tvar eoName;\n\n\t\tif (Folder.fs == 'Macintosh') {\n\t\t\teoName = \"PlugPlugExternalObject\";\t\t\t\t\t\t\t\n\t\t} else {\n\t\t\teoName = \"PlugPlugExternalObject.dll\";\n\t\t}\n\t\t\t\t\n\t\tvar mylib \t = new ExternalObject('lib:' + eoName);\n\t\tvar eventObj = new CSXSEvent();\n\n\t\teventObj.type = \"com.adobe.csxs.events.PProPanelRenderEvent\";\n\t\teventObj.data = \"Rendered Job \" + jobID + \", to \" + outputFilePath + \".\";\n    \teventObj.dispatch();\n\t},\n\t\n\tonEncoderJobError : function (jobID, errorMessage) {\n\t\tvar eoName; \n\n\t\tif (Folder.fs == 'Macintosh') {\n\t\t\teoName = \"PlugPlugExternalObject\";\t\t\t\t\t\t\t\n\t\t} else {\n\t\t\teoName = \"PlugPlugExternalObject.dll\";\n\t\t}\n\t\t\t\t\n\t\tvar mylib \t = new ExternalObject('lib:' + eoName);\n\t\tvar eventObj = new CSXSEvent();\n\n\t\teventObj.type = \"com.adobe.csxs.events.PProPanelRenderEvent\";\n\t\teventObj.data = \"Job \" + jobID + \" failed, due to \" + errorMessage + \".\";\n    \teventObj.dispatch();\n\t},\n\t\n\tonEncoderJobProgress : function (jobID, progress) {\n\t\t$._PPP_.message('onEncoderJobProgress called. jobID = ' + jobID + '. progress = ' + progress + '.');\n\n\t},\n\n\tonEncoderJobQueued : function (jobID) {\n\t    app.encoder.startBatch();\n\t},\n};\n",
+			"file": "jsx/Premiere.jsx",
+			"file_size": 33795,
+			"file_write_time": 131205538790000000,
+			"settings":
+			{
+				"buffer_size": 33776,
+				"line_ending": "CR"
+			}
+		},
+		{
+			"file": "ext.js",
+			"settings":
+			{
+				"buffer_size": 9298,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 107.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/sean/work/projects/Premiere/git/PProPanel",
+		"/Users/sean/work/projects/Premiere/git/PProPanel/jsx"
+	],
+	"file_history":
+	[
+		"/Users/sean/work/projects/Premiere/one file sequence.xml",
+		"/Users/sean/work/projects/Premiere/.debug",
+		"/Users/sean/work/projects/KineMaster-iOS/Framework/released/1.0.13/NexEditorSDK_IOSv1.0.13_Develop/INexEditorSDK for IOS Release Note.txt",
+		"/Users/sean/Library/Mobile Documents/com~apple~CloudDocs/private/Advice.txt",
+		"/Users/sean/Study/iOS/ioscontrol/.gitignore",
+		"/Users/sean/Downloads/WMail-darwin-x64/vendor-licenses/LICENSE.wmail",
+		"/Users/sean/work/projects/NexFilterSDK/doc/NexFilter.java",
+		"/Users/sean/work/projects/KineMaster-Android/src/project_format/kinemaster_project_wire.proto",
+		"/Users/sean/work/projects/trm/git/trm/NexFilterSDK/android/source/java/NexFilter.java",
+		"/Users/sean/work/projects/GioneeVideoEditor/Temp/log.txt",
+		"/Users/sean/work/projects/GioneeVideoEditor/Release/Version 0.6.0.y/README",
+		"/Users/sean/work/projects/Mixpanel/KMUsage.java"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"url",
+			"saveProject",
+			"save project",
+			"getActiveSequ",
+			"getseqname",
+			"get active ",
+			"audioonoff",
+			"mute",
+			"vol",
+			"crash",
+			"SingPlay",
+			"crash",
+			"exception",
+			"고향",
+			"고",
+			"고향",
+			"deviceScreenSizeTypeCount",
+			"start export",
+			"effect",
+			"TODO",
+			"exception",
+			"mixpanel"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10984,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								722,
+								722
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 27.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "PProPanel.jsx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 699,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								619,
+								619
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5354,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										236,
+										249
+									],
+									[
+										601,
+										614
+									],
+									[
+										934,
+										947
+									],
+									[
+										1272,
+										1285
+									],
+									[
+										1590,
+										1603
+									],
+									[
+										1741,
+										1754
+									],
+									[
+										1997,
+										2010
+									],
+									[
+										2717,
+										2729
+									],
+									[
+										2849,
+										2861
+									],
+									[
+										3643,
+										3655
+									],
+									[
+										3775,
+										3787
+									],
+									[
+										4551,
+										4562
+									],
+									[
+										4681,
+										4692
+									],
+									[
+										5084,
+										5095
+									],
+									[
+										5187,
+										5198
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								5092,
+								5092
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 4,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ \t].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 608.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "jsx/Premiere.jsx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 33776,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								738,
+								738
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 8797.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "ext.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 9298,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1744.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "ppro.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 350.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
